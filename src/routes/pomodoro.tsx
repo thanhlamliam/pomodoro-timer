@@ -22,7 +22,7 @@ function PomodoroTimer() {
     const [newTask, setNewTask] = useState('');
   
     useEffect(() => {
-      let timer: number | undefined;
+      let timer: NodeJS.Timeout | undefined;
       if (isRunning) {
         timer = setInterval(() => {
           setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));

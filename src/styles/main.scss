@@ -1,22 +1,13 @@
 @use './_variables' as *;
 
-@layer base {
-  @tailwind base;
-}
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
   font-family: $font-stack;
-  color: white;
-}
-
-button {
-  background-color: $secondary-color;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
 }
 
 .pomodoro-timer {
@@ -25,7 +16,6 @@ button {
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #fdfbfb, #ebedee);
   color: #333;
   text-align: center;
